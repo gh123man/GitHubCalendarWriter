@@ -1,7 +1,7 @@
 GitHub Calendar Writer
 ------------------
 
-gitHubCalendarWriter.php is a commandline PHP script that writes messages on your github commit calander.
+gitHubCalendarWriter.php is a commandline PHP script that rasterizes text into a displayable message on your github commit calander.
 
 To set a message, modify the first variable of the gitHubCalendarWriter.php file.
 
