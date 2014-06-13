@@ -13,6 +13,8 @@ Tips
  - Put spaces before your message if you have room (your message will be up longer)
  - Adjust the weight variable to chagne how many commoits per "pixel" are added
 
+
+
 test-ttf dumps a binary image to stdout for debugging and testing ttf fonts. mores support coming soon. 
 I have had minimal success with rending custom fonts. I need to work on shading when I have some time. 
 
