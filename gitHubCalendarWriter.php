@@ -1,7 +1,7 @@
 <?php
 
 
-$message = "HI GITHUB"; //caps works best
+$message = " Hi GitHub"; //caps works best
 $commitWeight = 20;
 
 drawOnGithub($message, $commitWeight);
@@ -39,10 +39,14 @@ function drawOnGithub($message, $weight) {
 
     mkdir("messageRepo");
     chdir("messageRepo");
+    
+    exec('echo "generated with: https://github.com/gh123man/GitHubCalendarWriter" > README.md');
 
     exec("git init");
 
     $dayCount = $offsetDate;
+    
+    firstCommit($dayCount);
 
     for ($i = 0; $i < 110; $i++) {
         for ($j = 0; $j < 7; $j++) {
@@ -62,6 +66,10 @@ function drawOnGithub($message, $weight) {
 
 function commit($time) {
     return "GIT_AUTHOR_DATE=$time GIT_COMMITTER_DATE=$time git commit --allow-empty --allow-empty-message -m ''";
+}
+function firstCommit($time) {
+    exec("git add README.md");
+    exec("GIT_AUTHOR_DATE=$time GIT_COMMITTER_DATE=$time git commit -m 'added README.md'");
 }
 
 
